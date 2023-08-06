@@ -43,7 +43,7 @@ function sendRequest() {
 	catch(e){}
 	finally{
 	jQuery('#contactform').slideUp("slow").hide();
-	jQuery('#contactWrapper').append('<div class="success"><h4>Email Successfully Sent!</h4><br><p>Thank you for using our contact form <strong>'+decodeURIComponent(name)+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
+	jQuery('#contactWrapper').append('<div class="success"><h4>Email Sbaşarıyla gönderildi</h4><br><p>Bizimle iletişime geçtiğiniz için teşekkür ederiz <strong>'+decodeURIComponent(name)+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
 	}
 }
 function sendRequest_booking() {
@@ -71,7 +71,7 @@ function sendRequest_booking() {
 	catch(e){}
 	finally{
 	jQuery('#contactform_booking').slideUp("slow").hide();
-	jQuery('#contactWrapper').append('<div class="success"><h4>Email Successfully Sent!</h4><br><p>Thank you for using our contact form <strong>'+decodeURIComponent(name)+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
+	jQuery('#contactWrapper').append('<div class="success"><h4>Email başarıyla gönderildi</h4><br><p>Bizimle iletişime geçtiğiniz için teşekkürler <strong>'+decodeURIComponent(name)+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
 	}
 }
 
@@ -91,7 +91,7 @@ function sendRequest_loans() {
 	catch(e){}
 	finally{
 	jQuery('#contactform_popup').slideUp("slow").hide();
-	jQuery('#contactWrapper_popup').append('<div class="success"><h4>Email Successfully Sent!</h4><br><p>Thank you for using our contact form <strong>'+name+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
+	jQuery('#contactWrapper_popup').append('<div class="success"><h4>Email başarıyla gönderildi</h4><br><p>Bizimle iletişime geçtiğiniz için teşekkürler <strong>'+name+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
 	}
 }
 
@@ -112,7 +112,7 @@ function sendRequest_popup() {
 	catch(e){}
 	finally{
 	jQuery('#contactform_popup').slideUp("slow").hide();
-	jQuery('#contactWrapper_popup').append('<div class="success"><h4>Email Successfully Sent!</h4><br><p>Thank you for using our contact form <strong>'+name+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
+	jQuery('#contactWrapper_popup').append('<div class="success"><h4>Email başarıyla gönderildi</h4><br><p>Bizimle iletişime geçtiğiniz için teşekkürler <strong>'+name+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
 	}
 }
 
@@ -219,7 +219,7 @@ function check_values() {
 	 if($j('#contactform #name').val()=='') {
 	 	var hasClass=$j('#contactform #name').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #name').parent().append('<label for="contactname" generated="true" class="error">Please enter your name</label>');
+	 	    $j('#contactform #name').parent().append('<label for="contactname" generated="true" class="error">Lütfen adınızı giriniz</label>');
 			$j('#contactform #name').focus();
 			//return false;
 			errors++;
@@ -231,7 +231,7 @@ function check_values() {
 		if(validate_email($j('#contactform #email').val())==false ) {
 		var hasClass=$j('#contactform #email').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #email').parent().append('<label for="contactname" generated="true" class="error">Please enter a valid email address</label>');	
+	 	    $j('#contactform #email').parent().append('<label for="contactname" generated="true" class="error">Lütfen mail adresiniz giriniz</label>');	
 			$j('#contactform #email').focus();
 			//return false;
 			errors++;
@@ -244,7 +244,7 @@ function check_values() {
 		if($j('#contactform #subject').val()==''){
 		var hasClass=$j('#contactform #subject').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #subject').parent().append('<label for="contactname" generated="true" class="error">You need to enter a subject!</label>');	
+	 	    $j('#contactform #subject').parent().append('<label for="contactname" generated="true" class="error">Kullanıcı adınızı giriniz</label>');	
 			$j('#contactform #subject').focus();
 			//return false;
 			errors++;
@@ -256,7 +256,7 @@ function check_values() {
 		if($j('#contactform #body').val()==''){
 		var hasClass=$j('#contactform #body').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #body').parent().append('<label for="contactname" generated="true" class="error">You need to enter a message!</label>');	
+	 	    $j('#contactform #body').parent().append('<label for="contactname" generated="true" class="error">Mesajı yazınız</label>');	
 			$j('#contactform #body').focus();
 			//return false;
 			errors++;
@@ -302,7 +302,7 @@ function check_values_loans() {
 	 if($j('#contactform #name').val()=='') {
 	 	var hasClass=$j('#contactform #name').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #name').parent().append('<label for="contactname" generated="true" class="error">Please enter your first name</label>');
+	 	    $j('#contactform #name').parent().append('<label for="contactname" generated="true" class="error">Lütfen adınızı giriniz</label>');
 			$j('#contactform #name').focus();
 			//return false;
 			errors++;
@@ -315,7 +315,7 @@ function check_values_loans() {
 		if($j('#contactform #subject').val()==''){
 		var hasClass=$j('#contactform #subject').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #subject').parent().append('<label for="contactname" generated="true" class="error">You need to enter a subject!</label>');	
+	 	    $j('#contactform #subject').parent().append('<label for="contactname" generated="true" class="error">Kullanıcı adınızı giriniz</label>');	
 			$j('#contactform #subject').focus();
 			//return false;
 			errors++;
@@ -327,7 +327,7 @@ function check_values_loans() {
 		if($j('#contactform #name_s').val()==''){
 		var hasClass=$j('#contactform #name_s').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #name_s').parent().append('<label for="contactname" generated="true" class="error">You need to enter your last name!</label>');	
+	 	    $j('#contactform #name_s').parent().append('<label for="contactname" generated="true" class="error">Soyadınızı giriniz!</label>');	
 			$j('#contactform #name_s').focus();
 			//return false;
 			errors++;
@@ -412,7 +412,7 @@ function check_values_booking() {
 	 if($j('#contactform_booking #name').val()=='') {
 	 	var hasClass=$j('#contactform_booking #name').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform_booking #name').parent().append('<label for="contactname" generated="true" class="error">Please enter your name</label>');
+	 	    $j('#contactform_booking #name').parent().append('<label for="contactname" generated="true" class="error">Lütfe adınızı giriniz</label>');
 			$j('#contactform_booking #name').focus();
 			//return false;
 			errors++;
@@ -424,7 +424,7 @@ function check_values_booking() {
 		if(validate_email($j('#contactform_booking #email').val())==false ) {
 		var hasClass=$j('#contactform_booking #email').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform_booking #email').parent().append('<label for="contactname" generated="true" class="error">Please enter a valid email address</label>');	
+	 	    $j('#contactform_booking #email').parent().append('<label for="contactname" generated="true" class="error">Lütfen mail adresinizi doğrulayınız</label>');	
 			$j('#contactform_booking #email').focus();
 			//return false;
 			errors++;
@@ -439,7 +439,7 @@ function check_values_booking() {
  if($j('#contactform_booking #surname').val()=='') {
 	 	var hasClass=$j('#contactform_booking #surname').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform_booking #surname').parent().append('<label for="contactname" generated="true" class="error">Please enter your surname</label>');
+	 	    $j('#contactform_booking #surname').parent().append('<label for="contactname" generated="true" class="error">Soyadınızı giriniz</label>');
 			$j('#contactform_booking #surname').focus();
 			//return false;
 			errors++;
@@ -517,7 +517,7 @@ function check_values_booking() {
 		if($j('#contactform_booking #body').val()==''){
 		var hasClass=$j('#contactform_booking #body').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform_booking #body').parent().append('<label for="contactname" generated="true" class="error">You need to enter a message!</label>');	
+	 	    $j('#contactform_booking #body').parent().append('<label for="contactname" generated="true" class="error">Mesajınızı giriniz</label>');	
 			$j('#contactform_booking #body').focus();
 			//return false;
 			errors++;
@@ -550,7 +550,7 @@ function check_values_popup() {
 	 if($j('#contactform_popup #name_popup').val()=='') {
 	 	var hasClass=$j('#contactform_popup #name_popup').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform_popup #name_popup').parent().append('<label for="contactname" generated="true" class="error">Please enter your name</label>');
+	 	    $j('#contactform_popup #name_popup').parent().append('<label for="contactname" generated="true" class="error">Lütfen adınızı giriniz</label>');
 			$j('#contactform_popup #name_popup').focus();
 			//return false;
 			errors++;
@@ -627,7 +627,7 @@ function check_values_news() {
 	 if($j('#newsletterform #name_news').val()=='') {
 	 	var hasClass=$j('#newsletterform #name_news').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#newsletterform #name_news').parent().append('<label for="contactname" generated="true" class="error">Please enter your name</label>');
+	 	    $j('#newsletterform #name_news').parent().append('<label for="contactname" generated="true" class="error">Adınızı giriniz</label>');
 			$j('#newsletterform #name_news').focus();
 			//return false;
 			errors++;
