@@ -219,7 +219,7 @@ function check_values() {
 	 if($j('#contactform #name').val()=='') {
 	 	var hasClass=$j('#contactform #name').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #name').parent().append('<label for="contactname" generated="true" class="error">Lütfen adınızı giriniz</label>');
+	 	    $j('#contactform #name').parent().append('<label for="contactname" generated="true" class="error">Lütfen adınızı ve soyadınızı giriniz</label>');
 			$j('#contactform #name').focus();
 			//return false;
 			errors++;
@@ -244,7 +244,7 @@ function check_values() {
 		if($j('#contactform #subject').val()==''){
 		var hasClass=$j('#contactform #subject').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #subject').parent().append('<label for="contactname" generated="true" class="error">Kullanıcı adınızı giriniz</label>');	
+	 	    $j('#contactform #subject').parent().append('<label for="contactname" generated="true" class="error">Konuyu giriniz</label>');	
 			$j('#contactform #subject').focus();
 			//return false;
 			errors++;
@@ -302,7 +302,7 @@ function check_values_loans() {
 	 if($j('#contactform #name').val()=='') {
 	 	var hasClass=$j('#contactform #name').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #name').parent().append('<label for="contactname" generated="true" class="error">Lütfen adınızı giriniz</label>');
+	 	    $j('#contactform #name').parent().append('<label for="contactname" generated="true" class="error">Lütfen adınızı ve soyadınızı giriniz</label>');
 			$j('#contactform #name').focus();
 			//return false;
 			errors++;
@@ -315,7 +315,7 @@ function check_values_loans() {
 		if($j('#contactform #subject').val()==''){
 		var hasClass=$j('#contactform #subject').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #subject').parent().append('<label for="contactname" generated="true" class="error">Kullanıcı adınızı giriniz</label>');	
+	 	    $j('#contactform #subject').parent().append('<label for="contactname" generated="true" class="error">Konuyu giriniz</label>');	
 			$j('#contactform #subject').focus();
 			//return false;
 			errors++;
@@ -550,7 +550,7 @@ function check_values_popup() {
 	 if($j('#contactform_popup #name_popup').val()=='') {
 	 	var hasClass=$j('#contactform_popup #name_popup').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform_popup #name_popup').parent().append('<label for="contactname" generated="true" class="error">Lütfen adınızı giriniz</label>');
+	 	    $j('#contactform_popup #name_popup').parent().append('<label for="contactname" generated="true" class="error">Lütfen adınızı ve soyadınızı giriniz</label>');
 			$j('#contactform_popup #name_popup').focus();
 			//return false;
 			errors++;
@@ -627,7 +627,7 @@ function check_values_news() {
 	 if($j('#newsletterform #name_news').val()=='') {
 	 	var hasClass=$j('#newsletterform #name_news').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#newsletterform #name_news').parent().append('<label for="contactname" generated="true" class="error">Adınızı giriniz</label>');
+	 	    $j('#newsletterform #name_news').parent().append('<label for="contactname" generated="true" class="error">Adınızı ve soyadınızı giriniz</label>');
 			$j('#newsletterform #name_news').focus();
 			//return false;
 			errors++;
